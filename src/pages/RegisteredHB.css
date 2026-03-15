@@ -1,0 +1,158 @@
+.registered-page {
+  background: #fff;
+  font-family: 'Rounded Mplus 1c', sans-serif;
+}
+
+.registered-content {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+/* Header Section */
+.registered-header {
+  width: 932px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.title-img {
+  width: 320px;
+  height: auto;
+}
+
+.toggle-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.toggle-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  font-size: 13px;
+  color: #888;
+  font-weight: 700;
+}
+
+/* Switch UI */
+.switch { position: relative; width: 40px; height: 20px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: #ccc; transition: .4s; border-radius: 20px; }
+.slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background: white; transition: .4s; border-radius: 50%; }
+input:checked + .slider { background: #315088; }
+input:checked + .slider:before { transform: translateX(20px); }
+
+/* Card List */
+.registered-list {
+  width: 932px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reg-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px 25px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  position: relative;
+}
+
+.reg-checkbox { width: 20px; height: 20px; margin-right: 20px; }
+.reg-logo { width: 60px; height: 60px; border-radius: 50%; object-fit: contain; margin-right: 20px; }
+.reg-info { flex: 2.5; }
+.reg-info h3 { font-size: 16px; color: #315088; font-weight: 800; margin: 0 0 5px 0; }
+.reg-info p { font-size: 12px; color: #666; margin: 0; }
+
+.reg-time { flex: 1.5; display: flex; align-items: center; gap: 8px; color: #315088; font-weight: 700; font-size: 13px; }
+.icon-time { width: 18px; height: 18px; }
+
+.reg-status-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.status-label { font-size: 12px; font-weight: 800; color: #333; }
+.status-dots { display: flex; gap: 4px; }
+.dot { width: 5px; height: 5px; background: #ddd; border-radius: 50%; }
+.dot.active { background: #315088; }
+
+.status-emoji { width: 45px; height: 45px; margin: 0 20px; object-fit: contain; }
+
+/* Dropdown Menu */
+.more-options-box { position: relative; }
+.btn-dots { background: none; border: none; font-size: 24px; color: #ccc; cursor: pointer; }
+
+.dropdown-menu {
+  position: absolute;
+  right: 0; top: 35px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  z-index: 100;
+  width: 110px;
+}
+
+.dropdown-menu button {
+  width: 100%; padding: 10px; border: none; background: none;
+  color: #E76F51; font-weight: 700; cursor: pointer;
+}
+
+/* Modals */
+.modal-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 9999;
+}
+.app-id-text {
+    font-size: 12px !important;
+    color: #888 !important;
+    margin-top: 5px !important;
+}
+
+.app-id-text span {
+    color: #315088;
+    font-weight: 800;
+    background: #f0f4f8;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.modal-box {
+  background: white; padding: 40px; border-radius: 20px; text-align: center; width: 450px;
+}
+
+.modal-trash-icon { width: 60px; margin-bottom: 20px; }
+.modal-actions { display: flex; gap: 15px; justify-content: center; margin-top: 30px; }
+
+.btn-cancel { background: #E76F51; color: white; border: none; padding: 10px 30px; border-radius: 8px; font-weight: 700; cursor: pointer; }
+.btn-yes { background: #315088; color: white; border: none; padding: 10px 30px; border-radius: 8px; font-weight: 700; cursor: pointer; }
+
+.rejection-reason-box {
+    margin-top: 10px;
+    background-color: #fff1f0; /* Màu đỏ nhạt */
+    border: 1px solid #ffa39e;
+    padding: 8px 12px;
+    border-radius: 6px;
+    width: 200px; /* Giới hạn chiều rộng để không vỡ card */
+}
+
+.rejection-reason-box p {
+    margin: 0;
+    font-size: 12px;
+    color: #cf1322; /* Màu đỏ đậm */
+    line-height: 1.4;
+    text-align: left;
+}
+
+/* Đảm bảo các chấm tròn có màu khi active */
+.dot.active {
+    background-color: #315088; /* Màu xanh đậm của hệ thống */
+    transform: scale(1.2); /* Phóng to nhẹ chấm đang hoạt động */
+}

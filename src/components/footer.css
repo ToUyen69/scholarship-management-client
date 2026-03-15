@@ -1,0 +1,133 @@
+.footer {
+    background-color: #262626; /* Màu nền tối */
+    color: #ffffff;
+    padding: 60px 0 40px 0;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 932px; /* Rộng bằng đúng các thẻ học bổng bên trên */
+    margin: 0 auto;   /* Căn giữa footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-title {
+    color: #F39237; /* Màu cam tiêu đề */
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer-list li a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Fix icon Media */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 24px;  /* Giới hạn kích thước icon social */
+    height: 24px;
+    filter: brightness(0) invert(1); /* Chuyển icon sang màu trắng nếu cần */
+}
+
+/* Phần logo và text ở đáy */
+
+
+/* FIX LỖI ẢNH TO: Giới hạn kích thước Logo UEL */
+.footer-image-info {
+    width: 50px; /* Chỉnh lại logo UEL nhỏ gọn */
+    height: auto;
+    margin-bottom: 150px;
+}
+
+.system-name {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.footer-info {
+    font-size: 12px;
+    opacity: 0.6;
+    margin: 4px 0;
+    text-transform: uppercase;
+}
+
+.footer-image-info {
+    max-width: 500px; /* Tăng lên khoảng 900px để gần bằng độ rộng của thẻ học bổng (932px) */
+    width: 95%;      /* Đảm bảo chiếm gần hết chiều ngang khung chứa */
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Căn giữa */
+    filter: brightness(1.1); /* Làm ảnh sáng hơn một chút */
+    padding-bottom: 30px;
+}
+
+/* 3. Đảm bảo footer-bottom không có khoảng cách quá lớn */
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    padding-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .footer-image-info {
+        max-width: 95%;
+    }
+}
+
+/* Chọn cột thứ 3 (cột MEDIA) để đẩy qua phải */
+.footer-column:nth-child(3) {
+    padding-left: 100px; /* Tăng con số này nếu bạn muốn nó qua phải nhiều hơn */
+}
+
+/* Đảm bảo tiêu đề MEDIA và các Icon thẳng hàng với nhau */
+.footer-column:nth-child(3) .footer-title {
+    margin-left: 0; 
+}
+
+/* Nếu bạn muốn các icon Media dạt hẳn về phía bên phải của khung 932px */
+/* Bạn có thể dùng cách này thay vì padding: */
+/*
+.footer-column:nth-child(3) {
+    text-align: right;
+}
+.social-icons {
+    justify-content: flex-end;
+}
+*/

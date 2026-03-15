@@ -1,0 +1,101 @@
+/* --- DeleteSuccess.css --- */
+
+/* Import font đồng bộ với toàn hệ thống */
+@import url('https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@400;700;800&display=swap');
+
+.delete-success-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Rounded Mplus 1c', sans-serif;
+}
+
+.success-content {
+  /* Đẩy nội dung xuống dưới AdminTopbar */
+  padding-top: 150px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* Chiếm không gian còn lại giữa Topbar và Footer */
+  width: 100%;
+}
+
+/* Logo UEL Scholarship Hub lớn phía trên */
+.hub-logo-large {
+  width: 500px; /* Kích thước logo lớn như trong hình */
+  height: auto;
+  margin-bottom: 40px;
+  object-fit: contain;
+}
+
+/* Hộp thoại màu trắng ở giữa */
+.success-card {
+  background-color: #ffffff;
+  width: 450px;
+  padding: 60px 40px;
+  border-radius: 30px; /* Bo góc lớn như mẫu */
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1); /* Đổ bóng mềm mại */
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Icon tích xanh (tick.png) */
+.tick-icon-large {
+  width: 120px; /* Tăng kích thước icon lên cho nổi bật */
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* Dòng chữ thông báo */
+.success-card p {
+  color: #315088; /* Màu xanh đậm UEL */
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+/* Nút Back màu cam */
+.btn-back-admin {
+  background-color: #F39237; /* Màu cam Scholarship */
+  color: #ffffff;
+  border: none;
+  padding: 10px 60px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-back-admin:hover {
+  background-color: #e58228;
+  transform: translateY(-2px);
+}
+
+.btn-back-admin:active {
+  transform: scale(0.95);
+}
+
+/* Đảm bảo Footer nằm đúng vị trí */
+footer {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 600px) {
+  .hub-logo-large {
+    width: 80%;
+  }
+  .success-card {
+    width: 90%;
+    padding: 40px 20px;
+  }
+}

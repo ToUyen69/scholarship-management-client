@@ -1,0 +1,193 @@
+/* --- START OF FILE AllHB.css --- */
+
+/* Import font để đồng bộ hệ thống */
+@import url('https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@400;500;700;800&display=swap');
+
+/* Container chính - QUAN TRỌNG: padding-top để không bị Topbar che */
+.desktop-show-list-hc {
+  padding-top: 150px; /* Chừa chỗ cho Topbar cố định phía trên */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+  font-family: "Rounded Mplus 1c", sans-serif;
+}
+
+/* --- THANH TÌM KIẾM --- */
+.search-filter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  
+  /* Đẩy khoảng cách xa thanh danh mục bên dưới */
+  margin-bottom: 60px; 
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #E3E3E3; /* Màu xám nhạt nền search */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 750px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.search-icon-box {
+  background-color: #315088; /* Màu xanh đậm của ô kính lúp */
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 22px;
+  height: 22px;
+  /* Chuyển icon sang màu trắng để nổi bật trên nền xanh */
+  filter: brightness(0) invert(1); 
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0 15px;
+  flex: 1;
+  font-family: inherit;
+  font-size: 16px;
+  color: #333;
+}
+
+.filter-button {
+  background-color: #315088;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #263f6b;
+}
+
+.filter-icon {
+  width: 26px;
+  height: 26px;
+}
+
+/* --- THANH DANH MỤC (NAVBAR) --- */
+.category-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;    
+  margin-bottom: 40px; 
+}
+
+.category-navbar {
+  display: flex;
+  gap: 50px;
+  border-bottom: 1px solid #E0E0E0; /* Đường kẻ mờ ngang trang */
+  padding-bottom: 10px;
+  position: relative;
+  min-width: 820px;
+  justify-content: center;
+}
+
+.category-item {
+  color: #315088;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.category-item:hover {
+  opacity: 0.8;
+}
+
+.category-item.active {
+  font-weight: 800; /* In đậm chữ khi được chọn */
+}
+
+/* Đường gạch xanh dưới chữ đang chọn */
+.line-active {
+  position: absolute;
+  bottom: -11px; /* Căn cho khít vào đường line ngang của navbar */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #315088;
+  border-radius: 2px;
+}
+
+/* --- NỘI DUNG DANH SÁCH --- */
+.list-title-container {
+  width: 932px; /* Khớp chính xác với độ rộng của ScholarshipCard */
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.scholarship-heading {
+  color: #FF8030; /* Màu cam đặc trưng của tiêu đề */
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.scholarship-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Khoảng cách giữa các thẻ học bổng */
+  width: 100%;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* Style cho thông báo khi không có dữ liệu */
+.no-data {
+  color: #888;
+  font-size: 18px;
+  margin: 100px 0;
+}
+
+/* PHÂN TRANG */
+.pagination {
+  color: #FF8030; /* Màu cam đồng bộ tiêu đề */
+  font-weight: 800;
+  font-family: inherit;
+  margin-bottom: 60px;
+  cursor: pointer;
+  letter-spacing: 5px; /* Tạo khoảng cách giữa các số */
+  transition: opacity 0.3s;
+}
+
+.pagination:hover {
+  opacity: 0.8;
+}
+
+/* Điều chỉnh Footer để không dính sát vào phân trang */
+footer {
+  margin-top: 20px;
+}
+
+/* Responsive cho màn hình nhỏ hơn */
+@media (max-width: 1000px) {
+  .search-bar { width: 90%; }
+  .list-title-container { width: 95%; }
+  .category-navbar { min-width: auto; gap: 30px; }
+}

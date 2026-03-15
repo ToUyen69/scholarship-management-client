@@ -1,0 +1,195 @@
+.desktop-home-page {
+  background-color: #ffffff;
+  min-height: 770px;
+  min-width: 1440px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.desktop-home-page .slider-ngang {
+  background-color: #ffffff;
+  height: 1024px;
+  left: -10px;
+  overflow-x: scroll;
+  position: absolute;
+  top: 0;
+  width: 1468px;
+}
+
+.desktop-home-page .slider-ngang::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.desktop-home-page .banner {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 1024px;
+  left: 0;
+  overflow-x: scroll;
+  padding: 10px;
+  position: absolute;
+  top: -10px;
+  width: 1440px;
+}
+
+.desktop-home-page .banner::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.desktop-home-page .image {
+  aspect-ratio: 1.42;
+  height: 980px;
+  margin-bottom: 750px;
+  margin-top: -7.00px;
+  position: relative;
+  width: 1442px;
+}
+
+.desktop-home-page .img {
+  aspect-ratio: 1.5;
+  height: 1707px;
+  margin-bottom: -351.50px;
+  margin-top: -351.50px;
+  position: relative;
+  width: 2560px;
+}
+
+.desktop-home-page .image-2 {
+  aspect-ratio: 1.5;
+  height: 1365px;
+  margin-bottom: -180.50px;
+  margin-top: -180.50px;
+  object-fit: cover;
+  position: relative;
+  width: 2048px;
+}
+
+.desktop-home-page .rectangle {
+  height: calc(100% - 20px);
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 927px;
+}
+
+.desktop-home-page .div {
+  height: calc(100% - 20px);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 985px;
+}
+
+.desktop-home-page .UEL-logo-ban-quyen {
+  aspect-ratio: 3.72;
+  height: 72px;
+  left: 600px;
+  object-fit: cover;
+  position: absolute;
+  top: 50px;
+  width: 267px;
+}
+
+.desktop-home-page .account {
+  height: 538px;
+  left: -10px;
+  position: absolute;
+  top: 501px;
+  width: 1454px;
+}
+
+.desktop-home-page .rectangle-2 {
+  background-color: #ffffff;
+  border-radius: 67px 67px 0px 0px;
+  height: 538px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1450px;
+}
+
+.desktop-home-page .group {
+  height: 38px;
+  left: 632px;
+  position: absolute;
+  top: 195px;
+  width: 189px;
+}
+
+.desktop-home-page .rectangle-3 {
+  background-color: #144e8c;
+  border-radius: 40px;
+  height: 38px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 187px;
+}
+
+.desktop-home-page .text-wrapper {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  font-family: "Rounded Mplus 1c Bold-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  height: 29px;
+  justify-content: center;
+  left: calc(50.00% - 88px);
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  width: 174px;
+}
+
+.desktop-home-page .p {
+  align-items: center;
+  color: #6b6969;
+  display: flex;
+  font-family: "Rounded Mplus 1c-Light", Helvetica;
+  font-size: 14px;
+  font-weight: 300;
+  height: 46px;
+  justify-content: center;
+  left: calc(50.00% - 318px);
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 220px;
+  width: 633px;
+}
+
+.desktop-home-page .text-wrapper-2 {
+  align-items: center;
+  color: #315088;
+  display: flex;
+  font-family: "Rounded Mplus 1c-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  height: 46px;
+  justify-content: center;
+  left: calc(50.00% - 318px);
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 256px;
+  width: 633px;
+}
+
+.desktop-home-page .thm-tiu-ph {
+  aspect-ratio: 6.18;
+  height: 500px;
+  left: 279px;
+  position: absolute;
+  top: -100px;
+  width: 924px;
+}

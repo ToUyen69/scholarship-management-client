@@ -1,0 +1,80 @@
+/* Container chính của 1 thẻ */
+.scholarship-card {
+  display: flex; /* Dàn hàng ngang */
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 40px; /* Bo góc mềm mại */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  width: 95%;
+  max-width: 932px;
+  min-height: 200px;
+  margin: 15px auto;
+  padding: 20px 40px;
+  border: 1px solid #eee;
+  font-family: "Rounded Mplus 1c Bold-Bold", Helvetica;
+
+}
+
+/* Container chứa ảnh bên trái */
+.card-logo-container {
+  flex: 0 0 250px; /* Cố định chiều rộng ảnh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.card-logo {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+/* Phần nội dung bên phải */
+.card-body {
+  flex: 1; /* Tự động chiếm hết phần còn lại */
+  display: flex;
+  flex-direction: column; /* Xếp chồng các dòng chữ lên nhau */
+  gap: 12px; /* Khoảng cách giữa các dòng */
+}
+
+/* Tiêu đề học bổng */
+.card-title {
+  color: #315088;
+  font-family: "Rounded Mplus 1c Bold-Bold", 'Times New Roman', Times, serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+/* Các dòng thông tin (Đơn vị, Đối tượng) */
+.card-info-row {
+  display: flex;
+  align-items: flex-start; /* Nếu text dài sẽ căn theo dòng đầu tiên */
+}
+
+.info-label {
+  color: #315088;
+  font-family: "Rounded Mplus 1c Bold-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 100px; /* Đảm bảo các chữ "Đơn vị:" thẳng hàng */
+  flex-shrink: 0;
+}
+
+.info-value {
+  color: #315088;
+  font-family: "Rounded Mplus 1c Bold-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Hiệu ứng khi di chuột vào thẻ */
+.scholarship-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0px 10px 30px rgba(49, 80, 136, 0.2);
+}

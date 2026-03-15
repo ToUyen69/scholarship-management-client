@@ -1,0 +1,103 @@
+.view-app-page { background-color: #fbfbfb; font-family: 'Rounded Mplus 1c', sans-serif; }
+.view-app-content { padding: 150px 0 80px; display: flex; flex-direction: column; align-items: center; }
+
+.view-app-header { width: 932px; margin-bottom: 40px; }
+.btn-back-link { background: none; border: none; color: #315088; font-weight: 700; cursor: pointer; margin-bottom: 20px; }
+.hb-name-title { color: #F39237; font-size: 24px; font-weight: 800; margin-bottom: 10px; }
+.app-count { color: #666; font-size: 16px; }
+
+.applications-list { width: 932px; display: flex; flex-direction: column; gap: 20px; }
+
+.app-item-card {
+    background: #fff; border-radius: 15px; padding: 25px;
+    display: flex; align-items: center; justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee;
+}
+
+.student-main-info { display: flex; align-items: center; gap: 20px; flex: 1.5; }
+.avatar-placeholder {
+    width: 60px; height: 60px; background: #315088; color: white;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; font-size: 24px; font-weight: 800;
+}
+
+.student-name { color: #315088; font-weight: 800; margin-bottom: 5px; }
+.app-id-sub { font-size: 12px; color: #888; }
+.app-id-sub span { color: #315088; font-weight: 700; }
+.applied-at { font-size: 12px; color: #aaa; margin-top: 5px; }
+
+.files-submitted { flex: 1; border-left: 1px solid #eee; padding-left: 30px; }
+.label-min { font-weight: 800; font-size: 13px; color: #315088; margin-bottom: 10px; }
+.file-link-list { list-style: none; padding: 0; }
+.file-link-list li { font-size: 13px; color: #555; margin-bottom: 5px; }
+
+.app-status-box { flex: 1; display: flex; flex-direction: column; align-items: flex-end; gap: 15px; }
+.status-badge {
+    padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 800;
+    text-transform: uppercase;
+}
+.status-badge.checking { background: #fff4e5; color: #ef7d31; }
+.status-badge.accepted { background: #e6f4ea; color: #1e8e3e; }
+.status-badge.rejected { background: #fce8e6; color: #d93025; }
+
+.admin-actions-inline { display: flex; gap: 10px; }
+.btn-tick, .btn-cross {
+    width: 35px; height: 35px; border-radius: 50%; border: none;
+    color: white; font-weight: 800; cursor: pointer; transition: 0.2s;
+}
+.btn-tick { background: #1e8e3e; }
+.btn-cross { background: #d93025; }
+.btn-tick:hover, .btn-cross:hover { transform: scale(1.1); }
+
+.no-applications { text-align: center; margin-top: 100px; color: #bbb; font-weight: 700; }
+
+/* Link tài liệu */
+.file-link-list a {
+    color: #315088;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+}
+.file-link-list a:hover { color: #F39237; }
+
+/* Modal Reject */
+.reject-box {
+    width: 500px;
+    padding: 30px;
+    text-align: left;
+}
+
+.modal-header { display: flex; align-items: center; gap: 15px; margin-bottom: 10px; }
+.reject-icon-small { width: 30px; }
+.modal-header h3 { color: #d93025; font-weight: 800; margin: 0; }
+.modal-sub { font-size: 13px; color: #777; margin-bottom: 20px; }
+
+.reject-box textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1.5px solid #ddd;
+    font-family: inherit;
+    resize: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+.reject-box textarea:focus { border-color: #d93025; }
+
+.btn-send-notify {
+    background-color: #315088;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.reason-preview {
+    font-size: 12px;
+    color: #d93025;
+    font-style: italic;
+    width: 200px;
+    text-align: right;
+}

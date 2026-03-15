@@ -1,0 +1,36 @@
+.create-hb-page { background: #fff; font-family: 'Rounded Mplus 1c', sans-serif; }
+.create-hb-content { padding-top: 130px; display: flex; flex-direction: column; align-items: center; min-height: 80vh; }
+
+.create-title { color: #F39237; font-weight: 800; font-size: 32px; margin-bottom: 50px; }
+
+.create-grid { display: flex; width: 1000px; gap: 50px; background: #f9f9f9; padding: 40px; border-radius: 20px; }
+
+/* Bước 1 Styles */
+.preview-img-box {
+  width: 280px; height: 380px; border: 2px dashed #315088; border-radius: 10px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; background: #fff;
+}
+.preview-img-box img { width: 90%; height: 80%; object-fit: contain; }
+.preview-img-box p { color: #F39237; font-weight: 700; font-size: 14px; margin-top: 10px; }
+
+.right-inputs { flex: 1; display: flex; flex-direction: column; gap: 15px; }
+.input-item { display: flex; align-items: center; gap: 20px; }
+.input-item label { width: 180px; color: #315088; font-weight: 800; font-size: 15px; }
+.input-item input { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ccc; background: #d9dee8; }
+
+.btn-next, .btn-create-final { align-self: flex-end; margin-top: 20px; background: #F39237; color: #fff; border: none; padding: 10px 60px; border-radius: 15px; font-weight: 800; cursor: pointer; }
+
+/* Bước 2 Styles */
+.poster-min { width: 200px; border-radius: 10px; margin-bottom: 20px; }
+.category-select { display: flex; flex-direction: column; gap: 15px; }
+.radio-item { display: flex; align-items: center; gap: 10px; color: #315088; font-weight: 700; cursor: pointer; }
+.right-side { flex: 1; display: flex; flex-direction: column; }
+.right-side textarea { padding: 20px; border-radius: 10px; border: 1px solid #ccc; font-family: inherit; resize: none; }
+
+/* Bước 3 Styles */
+.success-screen { display: flex; flex-direction: column; align-items: center; padding-bottom: 50px; }
+.hub-logo-big { width: 450px; margin-bottom: 30px; }
+.success-box { background: #fff; padding: 60px; border-radius: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); text-align: center; width: 450px; }
+.tick-icon { width: 100px; margin-bottom: 30px; }
+.success-box p { color: #315088; font-weight: 700; font-size: 20px; margin-bottom: 30px; }
+.btn-back-admin { background: #F39237; color: #fff; border: none; padding: 10px 50px; border-radius: 8px; font-weight: 700; cursor: pointer; }

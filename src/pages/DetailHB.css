@@ -1,0 +1,161 @@
+.detail-hb-page {
+  background-color: #fff;
+}
+
+.detail-content {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Rounded Mplus 1c', sans-serif;
+}
+
+/* --- THANH TÌM KIẾM ĐỒNG BỘ VỚI ALLHB --- */
+.search-filter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;    /* Khoảng cách với Topbar */
+  margin-bottom: 60px; /* Khoảng cách với phần thông tin học bổng bên dưới */
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #E3E3E3; /* Màu xám nhạt nền search */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 750px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.search-icon-box {
+  background-color: #315088; /* Màu xanh đậm của ô kính lúp */
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 22px;
+  height: 22px;
+  /* Quan trọng: Chuyển icon sang màu trắng */
+  filter: brightness(0) invert(1); 
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0 15px;
+  flex: 1;
+  font-family: inherit;
+  font-size: 16px;
+  color: #333;
+}
+
+.filter-button {
+  background-color: #315088;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #263f6b;
+}
+
+.filter-icon {
+  width: 26px;
+  height: 26px;
+  /* Đảm bảo icon filter cũng màu trắng */
+  filter: brightness(0) invert(1); 
+}
+
+/* Layout 2 cột */
+.detail-container {
+  display: flex;
+  max-width: 1100px;
+  width: 95%;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* Cột trái */
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detail-text-img {
+  width: 250px;
+  margin-bottom: 30px;
+}
+.hb-main-logo {
+  max-width: 300px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 40px;
+}
+.apply-now-btn {
+  background-color: #F39237;
+  color: white;
+  border: none;
+  padding: 12px 60px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Cột phải */
+.right-column {
+  flex: 2;
+}
+.hb-title-detail {
+  color: #315088;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+.hb-summary p {
+  color: #315088;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.hb-main-info h3 {
+  color: #315088;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #315088;
+  display: inline-block;
+}
+.hb-main-info ul {
+  list-style: none;
+  padding: 0;
+}
+.hb-main-info li {
+  color: #315088;
+  line-height: 1.6;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.contact-note {
+  margin-top: 30px;
+  font-style: italic;
+  color: #315088;
+}

@@ -1,0 +1,13 @@
+.image {
+  height: 79px;
+  width: 86px;
+}
+
+.image .rectangle {
+  height: 79px;
+  left: calc(50.00% - 43px);
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  width: 86px;
+}

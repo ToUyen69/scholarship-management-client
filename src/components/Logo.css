@@ -1,0 +1,14 @@
+.image {
+  height: 72px;
+  width: 267px;
+}
+
+.image .UEL-logo-ban-quyen {
+  aspect-ratio: 3.72;
+  height: 72px;
+  left: 0;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  width: 267px;
+}

@@ -1,0 +1,211 @@
+/* --- ADDetailHB.css --- */
+
+.ad-detail-page {
+  background-color: #fff;
+}
+
+.ad-detail-content {
+  padding-top: 150px; /* Chừa chỗ cho AdminTopbar fixed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Rounded Mplus 1c', sans-serif;
+}
+
+/* --- THANH TÌM KIẾM (ĐỒNG BỘ) --- */
+.search-filter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #E3E3E3;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 750px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.search-icon-box {
+  background-color: #315088;
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1); 
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0 15px;
+  flex: 1;
+  font-family: inherit;
+  font-size: 16px;
+  color: #333;
+}
+
+.filter-button {
+  background-color: #315088;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-button:hover { background-color: #263f6b; }
+.filter-icon { width: 26px; height: 26px; filter: brightness(0) invert(1); }
+
+/* --- LAYOUT CHÍNH 2 CỘT --- */
+.detail-container {
+  display: flex;
+  max-width: 1100px;
+  width: 95%;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* --- CỘT TRÁI: POSTER & 5 NÚT ADMIN --- */
+.left-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-label-img {
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+.hb-poster-admin {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Container chứa 5 nút điều khiển */
+.admin-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 220px; /* Đảm bảo các nút có độ rộng bằng nhau */
+}
+
+/* Style chung cho nút Admin */
+.admin-controls button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.1s;
+  color: white;
+  width: 100%;
+}
+
+.admin-controls button:active { transform: scale(0.98); }
+
+/* Nhóm nút màu CAM (Adjust, View App, View Report) */
+.btn-adj, .btn-view-app, .btn-view-rep {
+  background-color: #F39237;
+}
+
+/* Nhóm nút màu XANH (Close/Open, Delete) */
+.btn-status, .btn-del {
+  background-color: #315088;
+}
+
+/* Nút Open Scholarship khi đang ở trạng thái Closed (Sếp có thể đổi màu nếu muốn) */
+.admin-controls .open-type {
+  background-color: #4CAF50; /* Màu xanh lá nếu muốn nút Mở nổi bật */
+}
+
+/* --- CỘT PHẢI: NỘI DUNG --- */
+.right-col {
+  flex: 2;
+}
+
+.hb-title-admin {
+  color: #315088;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Badge trạng thái khi học bổng bị khóa */
+.closed-badge {
+  display: inline-block;
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #c62828;
+}
+
+.hb-info-text {
+  color: #315088;
+}
+
+/* Phần Summary (Số suất, giá trị...) */
+.summary-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Các khối thông tin (Điều kiện, Hồ sơ...) */
+.info-block {
+  margin-top: 30px;
+}
+
+.info-block h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.info-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-block li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  .detail-container { flex-direction: column; align-items: center; }
+  .right-col { text-align: center; }
+}

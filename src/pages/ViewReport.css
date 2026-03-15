@@ -1,0 +1,42 @@
+.report-page { background-color: #f8f9fa; min-height: 100vh; font-family: 'Rounded Mplus 1c', sans-serif; }
+.report-main-content { padding: 150px 0 60px; display: flex; flex-direction: column; align-items: center; width: 100%; }
+
+.report-header-section { width: 1000px; margin-bottom: 30px; text-align: center; }
+.report-main-title { color: #F39237; font-weight: 800; font-size: 32px; margin-bottom: 10px; }
+.hb-title-sub { color: #315088; font-size: 18px; font-weight: 700; margin-bottom: 25px; }
+
+.action-buttons-group { display: flex; gap: 15px; justify-content: center; }
+.btn-download { padding: 12px 25px; border-radius: 10px; border: none; font-weight: 800; cursor: pointer; color: white; transition: 0.3s; }
+.btn-download.excel { background-color: #1e8e3e; }
+.btn-download.pdf { background-color: #315088; }
+.btn-download:hover { opacity: 0.85; transform: translateY(-2px); }
+
+/* Dashboard Layout */
+.dashboard-grid { width: 1000px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+
+.stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px; }
+.stat-card { padding: 25px; border-radius: 15px; display: flex; flex-direction: column; align-items: center; border: 1px solid #eee; }
+.stat-num { font-size: 36px; font-weight: 800; }
+.stat-label { font-size: 14px; font-weight: 700; opacity: 0.8; }
+
+.stat-card.blue { background: #eef2ff; color: #315088; }
+.stat-card.green { background: #e6f4ea; color: #1e8e3e; }
+.stat-card.red { background: #fce8e6; color: #d93025; }
+.stat-card.orange { background: #fff4e5; color: #ef7d31; }
+
+.visual-section { display: flex; gap: 40px; align-items: flex-start; }
+.chart-container-box, .summary-table-box { flex: 1; }
+.chart-container-box h3, .summary-table-box h3 { color: #315088; font-size: 18px; font-weight: 800; margin-bottom: 20px; }
+
+.pie-wrapper { width: 280px; margin: 0 auto; }
+
+.mini-table { width: 100%; border-collapse: collapse; }
+.mini-table th { text-align: left; padding: 10px; border-bottom: 2px solid #f0f0f0; color: #888; font-size: 13px; }
+.mini-table td { padding: 12px 10px; border-bottom: 1px solid #f9f9f9; font-size: 14px; font-weight: 700; color: #444; }
+
+.status-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; }
+.status-dot.accepted { background: #1e8e3e; }
+.status-dot.rejected { background: #d93025; }
+.status-dot.checking { background: #ef7d31; }
+
+.back-btn { background: none; border: none; color: #315088; font-weight: 800; cursor: pointer; float: left; }

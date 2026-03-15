@@ -1,0 +1,89 @@
+.uphb-page { 
+    background: #fff; 
+    font-family: 'Rounded Mplus 1c', sans-serif; }
+.uphb-content { 
+    padding: 150px 0 50px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; }
+
+.uphb-title { 
+    color: #315088; 
+    font-size: 24px; 
+    font-weight: 800; 
+    max-width: 800px; 
+    text-align: center; margin-bottom: 40px; }
+
+.upload-zone {
+    width: 800px; height: 250px; border: 2px dashed #ccc; border-radius: 15px;
+    background: #f9f9f9; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; cursor: pointer; transition: 0.3s;
+}
+.upload-zone:hover { border-color: #315088; background: #f0f4f8; }
+.browse-text { color: #315088; text-decoration: underline; font-weight: 700; }
+.formats { font-size: 12px; color: #888; margin-top: 10px; }
+
+.file-list-container { width: 800px; margin-top: 30px; }
+.list-header { display: flex; justify-content: space-between; font-weight: 700; color: #315088; margin-bottom: 10px; }
+
+.file-item {
+    display: flex; align-items: center; background: #fff; border: 1px solid #ddd;
+    border-radius: 10px; padding: 15px; margin-bottom: 10px; justify-content: space-between;
+}
+.file-info { flex: 1; }
+.file-name { font-weight: 700; color: #315088; display: block; margin-bottom: 5px; }
+.progress-bar { width: 100%; height: 5px; background: #eee; border-radius: 5px; }
+.progress-fill { width: 100%; height: 100%; background: #315088; border-radius: 5px; }
+.btn-trash { width: 20px; cursor: pointer; margin-left: 20px; }
+
+.action-btns { display: flex; gap: 20px; margin-top: 40px; }
+.btn-back, .btn-back-status { 
+    background: #F39237; 
+    color: #fff; border: none; 
+    padding: 10px 40px; 
+    border-radius: 8px; 
+    font-weight: 700; 
+    cursor: pointer; }
+.btn-apply-final { background: #315088; color: #fff; border: none; padding: 10px 40px; border-radius: 8px; font-weight: 700; cursor: pointer; }
+
+/* MODALS STYLE */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 10000;
+}
+.modal-box {
+    background: #fff; padding: 40px; border-radius: 20px; width: 450px;
+    text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.modal-icon-large { width: 200px; margin-bottom: 200px; }
+.modal-btns { display: flex; gap: 15px; justify-content: center; margin-top: 25px; }
+.btn-cancel-modal { background: #E76F51; color: #fff; border: none; padding: 10px 25px; border-radius: 8px; cursor: pointer; font-weight: 700; }
+.btn-yes-modal { background: #315088; color: #fff; border: none; padding: 10px 25px; border-radius: 8px; cursor: pointer; font-weight: 700; }
+
+/* --- TRONG FILE UpHB.css --- */
+
+/* Tăng kích thước icon Tick và Cancel */
+.modal-icon-status {
+    width: 150px;       /* Bạn có thể tăng lên 150px nếu muốn to hơn nữa */
+    height: auto;
+    margin-bottom: 30px; /* Tăng khoảng cách dưới icon cho thoáng */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+
+/* Điều chỉnh lại hộp thoại để chứa icon to mà không bị chật */
+.modal-box.status-box {
+    padding: 50px 40px; /* Tăng padding để nội dung bên trong rộng rãi */
+    width: 500px;       /* Tăng nhẹ chiều rộng của hộp thoại */
+}
+
+/* Chỉnh lại text thông báo cho to rõ hơn */
+.modal-box p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    color: #333;
+}

@@ -1,0 +1,253 @@
+.desktop-login {
+  background-color: #ffffff;
+  min-height: 770px;
+  min-width: 1440px;
+  position: relative;
+  width: 100%;
+}
+
+.desktop-login .rectangle {
+  aspect-ratio: 1.5;
+  height: 770px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.desktop-login .div {
+  background-color: #b3b3b3b2;
+  border-radius: 41px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 695px;
+  left: calc(50.00% - 348px);
+  position: absolute;
+  top: 51px;
+  width: 695px;
+}
+
+.desktop-login .group {
+  height: 42px;
+  left: calc(50.00% - 85px);
+  position: absolute;
+  top: 396px;
+  width: 174px;
+}
+
+.desktop-login .rectangle-2 {
+  background-color: #315088;
+  border-radius: 30px;
+  height: 42px;
+  left: calc(50.00% - 75px);
+  position: absolute;
+  top: 0;
+  width: 149px;
+}
+
+.desktop-login .text-wrapper {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  font-family: "Rounded Mplus 1c Bold-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  height: 36px;
+  justify-content: center;
+  left: calc(50.00% - 87px);
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 3px;
+  width: 172px;
+}
+
+.desktop-login .p {
+  align-items: center;
+  color: #146be5;
+  display: flex;
+  font-family: "Rounded Mplus 1c-Light", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  height: 46px;
+  justify-content: center;
+  left: calc(50.00% - 313px);
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 631px;
+  width: 629px;
+}
+
+.desktop-login .text-wrapper-2 {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  font-family: "Rounded Mplus 1c-Black", Helvetica;
+  font-size: 16px;
+  font-weight: 900;
+  height: 24px;
+  justify-content: center;
+  left: calc(50.00% - 45px);
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 493px;
+}
+
+.desktop-login .text-wrapper-3 {
+  align-items: center;
+  color: #315088;
+  display: flex;
+  font-family: "Rounded Mplus 1c-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  height: 46px;
+  justify-content: center;
+  left: calc(50.00% - 313px);
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 667px;
+  width: 629px;
+}
+
+.desktop-login .img {
+  height: 79px;
+  left: calc(50.00% - 299px);
+  object-fit: cover;
+  position: absolute;
+  top: 111px;
+  width: 86px;
+}
+
+.desktop-login .group-2 {
+  height: 64px;
+  left: calc(50.00% - 196px);
+  position: absolute;
+  top: 223px;
+  width: 397px;
+}
+
+.desktop-login .rectangle-3 {
+  background-color: #ffffff;
+  border-radius: 21px;
+  height: 64px;
+  left: calc(50.00% - 198px);
+  position: absolute;
+  top: 1px;
+  width: 395px;
+}
+
+.desktop-login .text-wrapper-4 {
+  align-items: center;
+  color: #6b6969;
+  display: flex;
+  font-family: "Rounded Mplus 1c-Light", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  height: 33px;
+  justify-content: center;
+  left: calc(50.00% - 94px);
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  width: 185px;
+}
+
+.desktop-login .group-3 {
+  height: 64px;
+  left: calc(50.00% - 196px);
+  position: absolute;
+  top: 305px;
+  width: 397px;
+}
+
+.desktop-login .rectangle-4 {
+  background-color: #ffffff;
+  border-radius: 21px;
+  height: 64px;
+  left: calc(50.00% - 198px);
+  position: absolute;
+  top: 0;
+  width: 395px;
+}
+
+.desktop-login .text-wrapper-5 {
+  align-items: center;
+  color: #6b6969;
+  display: flex;
+  font-family: "Rounded Mplus 1c-Light", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  height: 32px;
+  justify-content: center;
+  left: calc(50.00% - 70px);
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  width: 140px;
+}
+
+.desktop-login .rectangle-5 {
+  background-color: #ffffff;
+  border-radius: 21px;
+  height: 64px;
+  left: calc(50.00% - 196px);
+  position: absolute;
+  top: 533px;
+  width: 395px;
+}
+
+.desktop-login .div-wrapper {
+  display: flex;
+  height: 31px;
+  justify-content: center;
+  left: calc(50.00% - 227px);
+  position: absolute;
+  top: 549px;
+  width: 459px;
+}
+
+.desktop-login .text-wrapper-6 {
+  align-items: center;
+  color: #6b6969;
+  display: flex;
+  font-family: "Rounded Mplus 1c-Light", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  height: 31.32px;
+  justify-content: center;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: -2px;
+  text-align: center;
+  width: 457px;
+}
+
+.desktop-login .line {
+  height: 1px;
+  left: calc(50.00% - 202px);
+  object-fit: cover;
+  position: absolute;
+  top: 480px;
+  width: 406px;
+}
+
+.desktop-login .rectangle-6 {
+  height: 54px;
+  left: 558px;
+  object-fit: cover;
+  position: absolute;
+  top: 538px;
+  width: 58px;
+}
