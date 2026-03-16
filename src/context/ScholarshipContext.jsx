@@ -137,7 +137,7 @@ export const ScholarshipProvider = ({ children }) => {
         addApplication, 
         removeApplication,
         notifications, 
-        updateApplicationStatus,
+
         
         // Data & Logic Admin
         allScholarships,
@@ -145,7 +145,7 @@ export const ScholarshipProvider = ({ children }) => {
         deleteScholarship,
         toggleScholarshipStatus,
         updateScholarship,
-        updateApplicationStatus // Sếp dùng hàm này ở trang ViewApplications nhé
+        updateApplicationStatus 
       }}
     >
       {children}

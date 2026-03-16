@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Đảm bảo bạn đã import file css
+import './footer.css'; // Đảm bảo bạn đã import file css
 
 const Footer = () => {
   return (
