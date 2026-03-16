@@ -31,7 +31,7 @@ export const DesktopHomePage = () => {
           <div className="text-wrapper">LOG IN</div>
         </div>
 
-        <p className="p">You don’t have an ESH account?</p>
+        <p className="p">You don’t have account?</p>
         <div className="text-wrapper-2">Register</div>
         <img className="thm-tiu-ph" alt="Hub" src="/UEL scholarship hub có note.png" />
       </div>

@@ -42,7 +42,7 @@ export const DesktopLogin = () => {
         <div className="text-wrapper">LOG IN</div>
       </div>
 
-      <p className="p">You don’t have an EMS account?</p>
+      <p className="p">You don’t have account?</p>
       <div className="text-wrapper-2">Log in with</div>
       <div className="text-wrapper-3" style={{ cursor: "pointer" }}>Register</div>
 
