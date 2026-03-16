@@ -98,7 +98,7 @@ const ThanhTopbar = () => {
             <img src="/UEL scholarship hub.png" alt="Hub" className="logo-text-img" />
           </div>
           <nav className="nav-menu">
-            <NavLink to="/" className={({ isActive }) => (isActive ? "nav-item active" : "nav-item")}>Homepage</NavLink>
+            <NavLink to="/list-hb" className={({ isActive }) => (isActive ? "nav-item active" : "nav-item")}>Homepage</NavLink>
             <NavLink to="/all-scholarship" className={({ isActive }) => (isActive ? "nav-item active" : "nav-item")}>UEL Scholarship</NavLink>
             <NavLink to="/registered" className={({ isActive }) => (isActive ? "nav-item active" : "nav-item")}>Registered Scholarships</NavLink>
           </nav>

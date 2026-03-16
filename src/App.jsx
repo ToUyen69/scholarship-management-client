@@ -28,7 +28,7 @@ function App() {
            {/* Trang cho sinh viên */}
 
           {/* 1. Mở web lên là thấy Landing Page (HomePage) */}
-          <Route path="/" element={<ListHB />} />
+          <Route path="/" element={<HomePage />} />
           {/* 2. Trang Đăng nhập */}
           <Route path="/login" element={<Login />} />
           {/* 3. Sau khi nhấn Login thành công -> Vào ListHB (Đây là Homepage sau login) */}

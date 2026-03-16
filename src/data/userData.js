@@ -45,6 +45,28 @@ export const mockUsers = [
     appliedScholarships: ["SCH002"],
     createdAt: "2024-01-20T00:00:00Z",
   },
+  {
+    id: "S003",
+    username: "Triệu Việt Cường",
+    password: "123456",
+    email: "trieuvietcuong@student.uel.edu.vn",
+    role: "student",
+    profile: {
+      fullName: "Triệu Việt Cường",
+      studentId: "K224110003",
+      class: "K22411",
+      faculty: "Khoa Kinh tế",
+      gender: "Nam",
+      phone: "0909888777",
+      gpa: 3.92,
+      trainingPoint: 88,
+      incomeStatus: "Hộ nghèo",
+      dateOfBirth: "2004-10-20",
+      year: "Năm 4",
+    },
+    appliedScholarships: ["SCH002"],
+    createdAt: "2024-01-20T00:00:00Z",
+  },
 
   // STUDENT AFFAIRS OFFICE (Phòng Công tác Sinh viên - Admin)
   {
